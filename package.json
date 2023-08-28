@@ -1,0 +1,15 @@
+{
+  "name": "imc",
+  "version": "1.0.0",
+  "description": "calculadora de imc ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve"
+  },
+  "author": "willian cardoso and mariana ferroni",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
