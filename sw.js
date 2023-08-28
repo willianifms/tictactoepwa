@@ -1,4 +1,4 @@
-let cacheName = "imc";
+let cacheName = "tictactoe";
 let filesToCache = ["/", "/index.html", "/css/main.css", "/js/main.js"];
 
 self.addEventListener("install", (e) => {

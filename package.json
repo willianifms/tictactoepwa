@@ -1,13 +1,13 @@
 {
-  "name": "imc",
+  "name": "tictactoe",
   "version": "1.0.0",
-  "description": "calculadora de imc ",
+  "description": "tictactoe",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "serve"
   },
-  "author": "willian cardoso and mariana ferroni",
+  "author": "willian cardoso ",
   "license": "ISC",
   "dependencies": {
     "serve": "^14.2.0"

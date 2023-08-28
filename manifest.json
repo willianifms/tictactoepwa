@@ -1,6 +1,6 @@
 {
-  "name":"Calculadora de IMC",
-  "short_name":"IMC",
+  "name":"tictactoe",
+  "short_name":"xo",
   "icons":[
     {
       "src":"images/teste.png",
