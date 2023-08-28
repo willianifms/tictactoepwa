@@ -1,59 +1,49 @@
-body{
-  background-color: #f5f5f5;
+body {
+  font-family: "Arial", sans-serif;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  width: 80%;
-  
-  background-color: #fff;
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-}
-
-.title {
-  color: #333;
+section {
   text-align: center;
 }
 
-form {
-  margin-top: 20px;
-
+.cell {
+  font-family: "Permanent Marker", cursive;
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 2px 2px #ecd7ba;
+  border: 2px solid #ecd7ba;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
 }
 
-.peso, .altura {
+.game--title {
+  font-size: 100px;
+  color: #d7a62f;
   margin: 10px auto;
-  display: block;
-  border-radius: 4px;
-  border: solid thin #ddd;
-  height: 40px;
-  width: calc(100% - 22px);
 }
 
-.calcular {
-    margin-top: 20px;
-    background-color: #1abc9c;
-    color: black;
-    border-radius: 4px;
-    border: none;
-    height: 40px;
-    width: calc(100% - 22px);
-    cursor:pointer;
+.game--container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 306px;
+  margin: 10px auto;
+  background-color: #11213a;
+  color: #04c0b2;
 }
 
-.calcular:hover {
-    background-color:#16a085; 
+.game--status {
+  font-size: 50px;
+  color: #d7a62f;
+  margin: 20px auto;
 }
 
-#teste {
-    margin-top:20px; 
+.game--restart {
+  background-color: #f7e4ac;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  color: #5586e2;
+  box-shadow: 2px 2px 2px 2px #d86c23;
+  border: 2px solid #d86c23;
 }
