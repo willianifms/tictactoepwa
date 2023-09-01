@@ -17,6 +17,10 @@ section {
   font-size: 60px;
 }
 
+.div:hover{
+  background-color: lawngreen;
+}
+
 .title {
   font-size: 100px;
   color: #8d795e;
@@ -29,21 +33,24 @@ section {
   width: 306px;
   margin: 10px auto;
   background-color: #7a9667;
-  color: #8d795e;
+  color: #000000;
 }
 
 .result {
   font-size: 50px;
-  color: #d7a62f;
+  color: #8d795e;
   margin: 20px auto;
 }
 
 .newGame {
-  background-color: #f7e4ac;
+  background-color: #7a9667;
   width: 200px;
   height: 50px;
   font-size: 25px;
-  color: #5586e2;
-  box-shadow: 2px 2px 2px 2px #d86c23;
-  border: 2px solid #d86c23;
+  color: #7c5d34;
+  border: 2px solid #688455;
+}
+
+.newGame:hover{
+  background-color: lawngreen;
 }
