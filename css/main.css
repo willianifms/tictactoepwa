@@ -6,7 +6,7 @@ section {
   text-align: center;
 }
 
-.cell {
+.div {
   font-family: "Permanent Marker", cursive;
   width: 100px;
   height: 100px;
@@ -17,28 +17,28 @@ section {
   font-size: 60px;
 }
 
-.game--title {
+.title {
   font-size: 100px;
-  color: #d7a62f;
+  color: #8d795e;
   margin: 10px auto;
 }
 
-.game--container {
+.container {
   display: grid;
   grid-template-columns: repeat(3, auto);
   width: 306px;
   margin: 10px auto;
-  background-color: #11213a;
-  color: #04c0b2;
+  background-color: #7a9667;
+  color: #8d795e;
 }
 
-.game--status {
+.result {
   font-size: 50px;
   color: #d7a62f;
   margin: 20px auto;
 }
 
-.game--restart {
+.newGame {
   background-color: #f7e4ac;
   width: 200px;
   height: 50px;

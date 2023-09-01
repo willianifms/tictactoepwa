@@ -1,16 +1,16 @@
-const statusDisplay = document.querySelector('.game--status');
+const result = document.querySelector('.result');
 
-let gameActive = true;
-let currentPlayer = "X";
-let gameState = ["", "", "", "", "", "", "", "", ""];
+let gameInicio = true;
+let jogadorAtual = "X";
+let estadoJogo = ["", "", "", "", "", "", "", "", ""];
 
-const winningMessage = () => `Player ${currentPlayer} has won!`;
-const drawMessage = () => `Game ended in a draw!`;
-const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
+const vencedor = () => `jogador com ${jogadorAtual} ganhou!`;
+const empate = () => `empate!`;
+const jogadorAtualTurn = () => `vez do ${jogadorAtual} jogar`;
 
-statusDisplay.innerHTML = currentPlayerTurn();
+result.innerHTML = jogadorAtualTurn();
 
-const winningConditions = [
+const condicaoVitoria = [
     [0, 1, 2],
     [3, 4, 5],
     [6, 7, 8],
@@ -21,23 +21,23 @@ const winningConditions = [
     [2, 4, 6]
 ];
 
-function handleCellPlayed(clickedCell, clickedCellIndex) {
-    gameState[clickedCellIndex] = currentPlayer;
-    clickedCell.innerHTML = currentPlayer;
+function handleDivPlayed(clickedDiv, clickedDivIndex) {
+    estadoJogo[clickedDivIndex] = jogadorAtual;
+    clickedDiv.innerHTML = jogadorAtual;
 }
 
-function handlePlayerChange() {
-    currentPlayer = currentPlayer === "X" ? "O" : "X";
-    statusDisplay.innerHTML = currentPlayerTurn();
+function condicaoVez() {
+    jogadorAtual = jogadorAtual === "X" ? "O" : "X";
+    result.innerHTML = jogadorAtualTurn();
 }
 
 function handleResultValidation() {
     let roundWon = false;
     for(let i = 0; i <= 7; i++) {
-        const winCondition = winningConditions[i];
-        const a = gameState[winCondition[0]];
-        const b = gameState[winCondition[1]];
-        const c = gameState[winCondition[2]];
+        const winCondition = condicaoVitoria[i];
+        const a = estadoJogo[winCondition[0]];
+        const b = estadoJogo[winCondition[1]];
+        const c = estadoJogo[winCondition[2]];
         if(a === '' || b === '' || c === '')
             continue;
         if(a === b && b === c) {
@@ -47,40 +47,40 @@ function handleResultValidation() {
     }
 
     if(roundWon) {
-        statusDisplay.innerHTML = winningMessage();
-        gameActive = false;
+        result.innerHTML = vencedor();
+        gameInicio = false;
         return;
     }
 
-    const roundDraw = !gameState.includes("");
+    const roundDraw = !estadoJogo.includes("");
     if(roundDraw) {
-        statusDisplay.innerHTML = drawMessage();
-        gameActive = false;
+        result.innerHTML = empate();
+        gameInicio = false;
         return;
     }
 
-    handlePlayerChange();
+    condicaoVez();
 }
 
-function handleCellClick(clickedCellEvent) {
-    const clickedCell = clickedCellEvent.target;
-    const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+function handleDivClick(clickedDivEvent) {
+    const clickedDiv = clickedDivEvent.target;
+    const clickedDivIndex = parseInt(clickedDiv.getAttribute('valueDiv'));
 
-    if(gameState[clickedCellIndex] !== "" || !gameActive)
+    if(estadoJogo[clickedDivIndex] !== "" || !gameInicio)
         return;
 
-    handleCellPlayed(clickedCell, clickedCellIndex);
+    handleDivPlayed(clickedDiv, clickedDivIndex);
     handleResultValidation();
 }
 
 function handleRestartGame() {
-    gameActive = true;
-    currentPlayer = "X";
-    gameState = ["", "", "", "", "", "", "", "", ""];
-    statusDisplay.innerHTML = currentPlayerTurn();
-    document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+    gameInicio = true;
+    jogadorAtual = "X";
+    estadoJogo = ["", "", "", "", "", "", "", "", ""];
+    result.innerHTML = jogadorAtualTurn();
+    document.querySelectorAll('.div').forEach(div => div.innerHTML = "");
 }
 
 
-document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
-document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
+document.querySelectorAll('.div').forEach(div => div.addEventListener('click', handleDivClick));
+document.querySelector('.newGame').addEventListener('click', handleRestartGame);
