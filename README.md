@@ -5,13 +5,15 @@
   </a>
   <br />
   <br />
-  
+  </div>
   <p >
 Este é um repositório para uma Progressive Web App (PWA) do clássico jogo da velha (Tic-Tac-Toe). Esta PWA oferece uma experiência de jogo rápida e divertida diretamente no navegador, sem a necessidade de instalação.
     <br />
     <br />
+    </p>
+   <div align="center">
     <a href="https://willianifms.github.io/tictactoepwa/">Jogue Agora</a>
-  </p>
+ 
 </div>
 
 <img src="/images/jogo.png" alt="printcomputador">
