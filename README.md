@@ -30,6 +30,7 @@ Service Workers para habilitar a funcionalidade PWA.
   <p align=" justify" >
 Este projeto está aberto a contribuições da comunidade. Se você deseja melhorar a IA, adicionar recursos adicionais ou corrigir bugs, fique à vontade para criar pull requests.
 </p>
+
 ### Para rodar a aplicação
 
 $ npm i serve --save
