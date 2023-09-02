@@ -6,9 +6,7 @@
   <br />
   <br />
   
-  <p align="center">
-  
-
+  <p >
 Este é um repositório para uma Progressive Web App (PWA) do clássico jogo da velha (Tic-Tac-Toe). Esta PWA oferece uma experiência de jogo rápida e divertida diretamente no navegador, sem a necessidade de instalação.
     <br />
     <br />
