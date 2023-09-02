@@ -1,13 +1,15 @@
  
 <div align="center">
   <a href="https://github.com/willianifms/tictactoepwa">
-    <h1>Jogo da Velha</h1>
+    <h1>Tic-Tac-Toe PWA </h1>
   </a>
   <br />
   <br />
   
   <p align="center">
-   Site desenvolvido para avaliação da matéria de Programação para Dispositivos Móveis, utilizando PWA
+  
+
+Este é um repositório para uma Progressive Web App (PWA) do clássico jogo da velha (Tic-Tac-Toe). Esta PWA oferece uma experiência de jogo rápida e divertida diretamente no navegador, sem a necessidade de instalação.
     <br />
     <br />
     <a href="https://willianifms.github.io/tictactoepwa/">Jogue Agora</a>
