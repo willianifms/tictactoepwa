@@ -20,7 +20,15 @@ Este é um repositório para uma Progressive Web App (PWA) do clássico jogo da 
 
 <img src="/images/lighthouse.png" alt="printlighthouse">
 
+###Tecnologias Utilizadas:
 
+HTML, CSS e JavaScript para a interface do usuário e funcionalidade do jogo.
+Service Workers para habilitar a funcionalidade PWA.
+
+
+###Contribuições São Bem-Vindas:
+
+Este projeto está aberto a contribuições da comunidade. Se você deseja melhorar a IA, adicionar recursos adicionais ou corrigir bugs, fique à vontade para criar pull requests.
 
 ### Para rodar a aplicação
 
