@@ -1,6 +1,6 @@
  
 <div align="center">
-  <a href="https://github.com/marianaferr0ni/jogo-da-velha">
+  <a href="https://github.com/willianifms/tictactoepwa">
     <h1>Jogo da Velha</h1>
   </a>
   <br />
@@ -16,7 +16,7 @@
 
 <img src="/images/jogo.png" alt="printcomputador">
 
-<img src="/imagens/lighthouse.png" alt="printlighthouse">
+<img src="/images/lighthouse.png" alt="printlighthouse">
 
 
 
